@@ -36,7 +36,7 @@ nav {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 nav ul li a {
@@ -109,6 +109,10 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 800px) {
+  .list {
+    float: left;
+  }
+
   .mid-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,11 +130,9 @@ nav ul li a:hover {
   }
 
   .paratext {
-    width: 100%;
-    max-width: 574px;
+    width: 574px;
     min-height: 100px;
     font-size: 12px;
-    margin-left: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -140,7 +142,7 @@ nav ul li a:hover {
     font-size: 72px;
     line-height: 36px;
     letter-spacing: -0.8px;
-    margin-left: 20px;
+    margin-left: 70px;
     color: #fff;
   }
 
@@ -179,7 +181,6 @@ nav ul li a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 55px;
   }
 
   .paratext {
@@ -187,9 +188,6 @@ nav ul li a:hover {
     max-width: 211px;
     min-height: 100px;
     font-size: 12px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .head-text {
@@ -197,17 +195,14 @@ nav ul li a:hover {
     line-height: 36px;
     letter-spacing: -0.8px;
     color: #fff;
-    margin-left: 81px;
   }
 
   .mid-text {
     width: 100%;
-    width: 211px;
+    min-width: 211px;
     min-height: 49px;
     font-size: 12px;
     color: #fff;
-    text-align: center;
-    margin-left: 35px;
   }
 
   .headshot {
